@@ -238,13 +238,14 @@ function esPalindromo(palabra){
     for(var i=palabra.length-1;i>=0;i--){
         palabraInvertida+=palabra[i];
     }    
-    if (palabraInvertida(palabra)==palabra){
+    if (palabraInvertida==palabra){
         siEsPalindromo = true;
         console.log("la palabra es palindromo");
     }
-    else{
-        console.log("La palabra no es palindromo");
-    }
-    return palabraInvertida;
+    return siEsPalindromo;
 }
 console.log(esPalindromo("ana"));
+
+
+
+//Funcion que dado un numero calcule su factorial
